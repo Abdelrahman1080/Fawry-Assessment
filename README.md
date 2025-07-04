@@ -2,23 +2,21 @@
 
 This Java-based mini e-commerce simulation models the core components of an online shopping system. It includes product management, shopping cart handling, customer balance checking, expiration and shipping verification, and a checkout system with a receipt printout.
 org.example
+```plaintext
+org.example
 ├── cart
 │   └── Cart
-│
 ├── customer
 │   └── Customer
-│
 ├── product
 │   ├── Product                         (Base class)
 │   ├── ExpirableProduct                (extends Product)
 │   ├── ShippableProduct                (extends Product, implements Shippable)
 │   ├── ShippableAndExpirableProduct   (extends ExpirableProduct, implements Shippable)
-│   └── Shippable                      (Interface)
-│
-├── services
-│   ├── CheckoutService                 (Business logic for checkout)
-│   └── ShippingServiceImpl            (Implements shipping logic)
-
+│   └── Shippable                       (Interface)
+└── services
+    ├── CheckoutService                 (Business logic for checkout)
+    └── ShippingServiceImpl            (Implements shipping logic)
 
 
 
