@@ -1,4 +1,4 @@
-package org.example.services;
+package org.example.product;
 
 public interface Shippable {
     String getName();

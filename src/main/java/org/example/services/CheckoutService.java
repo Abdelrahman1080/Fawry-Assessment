@@ -1,4 +1,4 @@
-package org.example.checkout;
+package org.example.services;
 
 import org.example.cart.Cart;
 import org.example.customer.Customer;
@@ -6,15 +6,12 @@ import org.example.product.ExpirableProduct;
 import org.example.product.Product;
 import org.example.product.ShippableAndExpirableProduct;
 import org.example.product.ShippableProduct;
-import org.example.services.Shippable;
-import org.example.services.ShippingServiceImpl;
+import org.example.product.Shippable;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class Checkout {
+public class CheckoutService {
     public static void checkout(Customer customer, Cart thecart) {
         if(thecart.isEmpty())
             throw new IllegalStateException("There's nothing to checkout");
